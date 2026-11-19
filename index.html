@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavie Ateliê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        Peças personalizadas feitas com carinho para você
+    </div>
+
+    <header>
+        <a href="#inicio" class="logo">
+            mavie <span>ATELIÊ</span>
+        </a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#esbocos">Criações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="subtitle">MODA COM IDENTIDADE</p>
+
+                <h1>Seu estilo,<br>do seu jeito.</h1>
+
+                <p>
+                    Transformamos ideias em peças únicas,
+                    criadas para expressar sua personalidade.
+                </p>
+
+                <a href="#colecao" class="button">
+                    Conheça nossas peças
+                </a>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="about" id="sobre">
+            <div>
+                <p class="subtitle">NOSSA ESSÊNCIA</p>
+                <h2>Mais que roupas,<br>uma forma de expressão.</h2>
+            </div>
+
+            <p>
+                A Mavie Ateliê nasceu com o propósito de transformar
+                roupas em peças especiais. Acreditamos que cada pessoa
+                possui um estilo próprio e merece expressá-lo.
+                Criamos peças personalizadas com criatividade,
+                delicadeza e cuidado em cada detalhe.
+            </p>
+        </section>
+
+        <!-- COLEÇÃO -->
+        <section class="collection" id="colecao">
+            <p class="subtitle">CONHEÇA NOSSO TRABALHO</p>
+            <h2>Nossas criações</h2>
+
+            <div class="products">
+
+                <article class="product">
+                    <img src="img/camiseta-mavie.jpg"
+                         alt="Camiseta personalizada">
+                    <h3>Camiseta personalizada</h3>
+                    <p>Uma peça criada para representar seu estilo.</p>
+                </article>
+
+                <article class="product">
+                    <img src="img/calca-mavie.jpg"
+                         alt="Calça personalizada">
+                    <h3>Calça personalizada</h3>
+                    <p>Detalhes que transformam uma peça básica.</p>
+                </article>
+
+                <!-- IMAGEM CORRIGIDA -->
+                <article class="product">
+                    <img src="img/camiseta-mavie.jpg"
+                         alt="Detalhes da camiseta personalizada">
+                    <h3>Detalhes especiais</h3>
+                    <p>Criatividade em cada acabamento.</p>
+                </article>
+
+                <!-- IMAGEM CORRIGIDA -->
+                <article class="product">
+                    <img src="img/calca-mavie.jpg"
+                         alt="Detalhes da calça personalizada">
+                    <h3>Personalização</h3>
+                    <p>Peças com identidade e originalidade.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ESBOÇOS -->
+        <section class="sketches" id="esbocos">
+            <div>
+                <p class="subtitle">DO PAPEL PARA A REALIDADE</p>
+                <h2>Onde tudo começa.</h2>
+
+                <p>
+                    Antes de cada criação, existe uma ideia.
+                    Nossos esboços representam o início do processo
+                    criativo de cada peça.
+                </p>
+            </div>
+
+            <img src="img/esbocos-mavie.jpg"
+                 alt="Esboços das roupas da Mavie Ateliê">
+        </section>
+
+<!-- PERSONALIZE SUA PEÇA -->
+<section class="customizer" id="personalizar">
+
+    <p class="subtitle">CRIE DO SEU JEITO</p>
+    <h2>Personalize sua peça</h2>
+
+    <p class="customizer-description">
+        Escolha os detalhes e crie uma roupa que tenha a sua identidade.
+    </p>
+
+    <div class="customizer-container">
+
+        <!-- PRÉVIA DA ROUPA -->
+        <div class="preview-area">
+            <h3> Sua criação </h3>
+
+            <div class="clothing-preview">
+                <div id="clothing" class="shirt">
+                    <span id="preview-text">Mavie</span>
+                </div>
+            </div>
+
+            <p>Prévia da sua personalização</p>
+        </div>
+
+        <!-- OPÇÕES -->
+        <div class="customizer-options">
+
+            <label for="piece">Escolha sua peça</label>
+            <select id="piece">
+                <option value="Camiseta">Camiseta</option>
+                <option value="Calça">Calça</option>
+            </select>
+
+            <label for="color">Escolha a cor</label>
+            <select id="color">
+                <option value="#f5f0e8">Branco</option>
+                <option value="#e8c6c3">Rosa</option>
+                <option value="#a9bbd0">Azul</option>
+                <option value="#333333">Preto</option>
+                <option value="#b9a18d">Marrom</option>
+            </select>
+
+            <label for="phrase">Escreva uma frase ou nome</label>
+            <input
+                type="text"
+                id="phrase"
+                placeholder="Ex.: Seu nome aqui"
+                maxlength="20"
+            >
+
+            <label for="size">Escolha o tamanho</label>
+            <select id="size">
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M" selected>M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+
+            <label for="details">Conte como deseja sua peça</label>
+            <textarea
+                id="details"
+                placeholder="Descreva estampas, desenhos e outros detalhes..."
+                rows="4"
+            ></textarea>
+
+            <button type="button" id="send-customization">
+                Enviar minha criação pelo WhatsApp
+            </button>
+
+        </div>
+    </div>
+</section>
+
+        <!-- CONTATO -->
+        <section class="contact" id="contato">
+            <p class="subtitle">VAMOS CRIAR JUNTAS?</p>
+
+            <h2>Seu estilo merece ser único.</h2>
+
+            <p>
+                Entre em contato e descubra como ter uma peça
+                personalizada especialmente para você.
+            </p>
+
+            <a href="https://wa.me/5514997588643"
+               target="_blank"
+               class="button">
+                Fale conosco pelo WhatsApp
+            </a>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <a href="#inicio" class="logo">
+            mavie <span>ATELIÊ</span>
+        </a>
+
+        <p>© 2026 Mavie Ateliê. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

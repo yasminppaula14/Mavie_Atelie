@@ -1,0 +1,16 @@
+MAVIE ATELIÊ — COMO ABRIR O SITE
+
+1. Extraia o arquivo ZIP.
+2. Abra o VS Code.
+3. Clique em Arquivo > Abrir Pasta e escolha a pasta "mavie-atelie-site".
+4. Os arquivos principais são:
+   - index.html: conteúdo e estrutura das páginas.
+   - style.css: cores, fontes, tamanhos e aparência.
+   - script.js: botão do WhatsApp e menu para celular.
+5. Para ver o site, abra o index.html no navegador. Se você usa a extensão Live Server, clique com o botão direito no index.html e escolha "Open with Live Server".
+
+IMPORTANTE:
+- Não separe os arquivos de imagem da pasta. O HTML usa os nomes dos arquivos JPG que estão junto dele.
+- O botão de WhatsApp já está configurado com o número informado na conversa.
+- A logo foi representada por um nome em texto com fonte elegante. Se quiser usar o arquivo original da logo, salve-o nesta pasta como logo.png e peça para trocar o texto pela imagem.
+- As fontes do Google precisam de internet para carregar; o site continua funcionando sem elas usando fontes alternativas.
